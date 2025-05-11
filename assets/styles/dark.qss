@@ -1,0 +1,109 @@
+/* Dark Theme for OnaPlay */
+
+QMainWindow, QDialog {
+    background-color: #2b2b2b;
+    color: #e0e0e0;
+}
+
+QWidget {
+    background-color: #2b2b2b;
+    color: #e0e0e0;
+    selection-background-color: #3a6ea5;
+    selection-color: white;
+}
+
+QPushButton {
+    background-color: #3c3f41;
+    border: 1px solid #555555;
+    border-radius: 4px;
+    padding: 5px 10px;
+    min-width: 80px;
+}
+
+QPushButton:hover {
+    background-color: #4e5254;
+    border: 1px solid #6c6c6c;
+}
+
+QPushButton:pressed {
+    background-color: #2b2b2b;
+}
+
+QPushButton:disabled {
+    color: #6c6c6c;
+    background-color: #323232;
+    border: 1px solid #3c3f41;
+}
+
+QSlider::groove:horizontal {
+    height: 5px;
+    background: #3c3f41;
+    margin: 5px 0;
+    border-radius: 2px;
+}
+
+QSlider::handle:horizontal {
+    background: #6c6c6c;
+    width: 12px;
+    margin: -5px 0;
+    border-radius: 6px;
+}
+
+QSlider::sub-page:horizontal {
+    background: #3a6ea5;
+    border-radius: 2px;
+}
+
+QListWidget {
+    background-color: #2b2b2b;
+    color: #e0e0e0;
+    border: 1px solid #3c3f41;
+    border-radius: 4px;
+    padding: 2px;
+}
+
+QListWidget::item {
+    padding: 5px;
+    border-bottom: 1px solid #3c3f41;
+}
+
+QListWidget::item:selected {
+    background-color: #3a6ea5;
+    color: white;
+}
+
+QListWidget::item:hover {
+    background-color: #3c3f41;
+}
+
+QMenuBar {
+    background-color: #2b2b2b;
+    color: #e0e0e0;
+}
+
+QMenuBar::item {
+    padding: 5px 10px;
+    background-color: transparent;
+}
+
+QMenuBar::item:selected {
+    background-color: #3c3f41;
+}
+
+QMenu {
+    background-color: #2b2b2b;
+    color: #e0e0e0;
+    border: 1px solid #3c3f41;
+    padding: 5px;
+}
+
+QMenu::item:selected {
+    background-color: #3a6ea5;
+    color: white;
+}
+
+QStatusBar {
+    background-color: #2b2b2b;
+    color: #a0a0a0;
+    border-top: 1px solid #3c3f41;
+}

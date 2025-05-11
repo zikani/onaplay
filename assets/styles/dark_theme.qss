@@ -1,0 +1,303 @@
+/* Dark Theme for OnaPlay - Modern Design */
+
+/* Main Window */
+QMainWindow {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+QWidget {
+    background-color: transparent;
+    color: #e0e0e0;
+    selection-background-color: #8b5cf6;
+    selection-color: white;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+/* Title Bar */
+#titleBar {
+    background-color: #252525;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    padding: 5px 10px;
+}
+
+#titleLabel {
+    color: #e0e0e0;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+/* Video Area */
+#videoContainer {
+    background-color: #0d0d0d;
+    border-radius: 8px;
+    border: 1px solid #333;
+}
+
+/* Control Bar */
+#controlBar {
+    background-color: rgba(26, 26, 26, 0.85);
+    border-radius: 8px;
+    padding: 10px;
+    border: 1px solid #333;
+}
+
+/* Timeline */
+QSlider::groove:horizontal {
+    height: 4px;
+    background: #3a3a3a;
+    border-radius: 2px;
+}
+
+QSlider::sub-page:horizontal {
+    background: #8b5cf6;
+    border-radius: 2px;
+}
+
+QSlider::handle:horizontal {
+    width: 12px;
+    height: 12px;
+    margin: -4px 0;
+    border-radius: 6px;
+    background: #a78bfa;
+    border: 1px solid #121212;
+}
+
+/* Buttons */
+QPushButton {
+    background-color: #252525;
+    border: none;
+    border-radius: 16px;
+    min-width: 32px;
+    min-height: 32px;
+    padding: 5px;
+}
+
+QPushButton:hover {
+    background-color: #333;
+}
+
+QPushButton:pressed {
+    background-color: #1a1a1a;
+}
+
+/* Play Button */
+#playButton {
+    background-color: #8b5cf6;
+    min-width: 48px;
+    min-height: 48px;
+    border-radius: 24px;
+}
+
+#playButton:hover {
+    background-color: #7c3aed;
+}
+
+/* Volume Slider */
+QSlider::handle:horizontal#volumeSlider {
+    width: 12px;
+    height: 12px;
+    margin: -4px 0;
+    border-radius: 6px;
+    background: #a78bfa;
+    border: 1px solid #121212;
+}
+
+/* Playlist */
+#playlistPanel {
+    background-color: rgba(26, 26, 26, 0.85);
+    border-radius: 8px;
+    border: 1px solid #333;
+}
+
+#playlistHeader {
+    background-color: #252525;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    padding: 10px;
+}
+
+#playlistTools {
+    background-color: #1f1f1f;
+    padding: 10px;
+}
+
+/* Playlist Items */
+#playlist QListWidget {
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+#playlist QListWidget::item {
+    background-color: rgba(37, 37, 37, 0.5);
+    border-radius: 6px;
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid transparent;
+}
+
+#playlist QListWidget::item:selected {
+    background-color: rgba(139, 92, 246, 0.2);
+    border: 1px solid #8b5cf6;
+}
+
+#playlist QListWidget::item:hover {
+    background-color: rgba(37, 37, 37, 0.8);
+}
+
+/* Info Panel */
+#infoPanel {
+    background-color: rgba(26, 26, 26, 0.85);
+    border-radius: 8px;
+    border: 1px solid #333;
+    padding: 15px;
+}
+
+#infoTabs {
+    background-color: #252525;
+    border-radius: 6px;
+    padding: 10px;
+}
+
+#activeTab {
+    background-color: #8b5cf6;
+    border-radius: 15px;
+    padding: 5px 15px;
+    color: white;
+}
+
+.inactiveTab {
+    color: #999;
+    padding: 5px 15px;
+}
+
+/* Scrollbars */
+QScrollBar:vertical {
+    border: none;
+    background: #1a1a1a;
+    width: 10px;
+    margin: 0px;
+}
+
+QScrollBar::handle:vertical {
+    background: #333;
+    min-height: 20px;
+    border-radius: 5px;
+}
+
+QScrollBar::add-line:vertical, QScrollBar::sub-line:vertical {
+    height: 0px;
+}
+
+/* Text Colors */
+.titleText {
+    color: #e0e0e0;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.subText {
+    color: #999;
+    font-size: 12px;
+}
+
+/* Settings Dialog */
+#settingsDialog {
+    background-color: #252525;
+    border: 1px solid #333;
+    border-radius: 12px;
+}
+
+#settingsHeader {
+    background-color: #1a1a1a;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    padding: 15px;
+}
+
+#settingsSidebar {
+    background-color: #1a1a1a;
+    border-right: 1px solid #333;
+}
+
+#settingsSidebar QPushButton {
+    text-align: left;
+    padding: 10px 15px;
+    border-radius: 6px;
+    margin: 5px;
+}
+
+#settingsSidebar QPushButton:checked {
+    background-color: #8b5cf6;
+    color: white;
+}
+
+/* Toggle Switch */
+QCheckBox::indicator {
+    width: 30px;
+    height: 16px;
+    border-radius: 8px;
+    background-color: #333;
+}
+
+QCheckBox::indicator:checked {
+    background-color: #8b5cf6;
+}
+
+QCheckBox::indicator:unchecked {
+    background-color: #333;
+}
+
+QCheckBox::indicator:unchecked {
+    border: none;
+}
+
+QCheckBox::indicator:checked {
+    border: none;
+}
+
+/* Dropdown */
+QComboBox {
+    background-color: #1a1a1a;
+    border: 1px solid #333;
+    border-radius: 6px;
+    padding: 5px 10px;
+    min-width: 100px;
+}
+
+QComboBox::drop-down {
+    border: none;
+    width: 20px;
+}
+
+QComboBox::down-arrow {
+    image: url(:/icons/down_arrow.png);
+    width: 10px;
+    height: 10px;
+}
+
+/* Buttons */
+.primaryButton {
+    background-color: #8b5cf6;
+    color: white;
+    padding: 8px 20px;
+    border-radius: 18px;
+    font-weight: bold;
+}
+
+.primaryButton:hover {
+    background-color: #7c3aed;
+}
+
+.secondaryButton {
+    background-color: #333;
+    color: #e0e0e0;
+    padding: 8px 20px;
+    border-radius: 18px;
+}
+
+.secondaryButton:hover {
+    background-color: #444;
+}
